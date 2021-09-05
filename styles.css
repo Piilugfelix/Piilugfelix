@@ -1,0 +1,80 @@
+
+#body {
+margin:0;
+padding:0;
+font-family:san-serif;
+background-image: url("d.jpg");
+background-size:cover;
+background-attachment:fixed;
+background-repeat:no-repeat;
+clip-path:circle(50%);
+background-color:red;
+mix-blend-mode:darken;
+}
+.box {
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width:400px;
+background: #333;
+box-sizing:border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,0.9);
+border-radius:30%;
+background-image:transparent;
+}
+.box h2{
+margin:0 0 30px;
+padding:0px;
+color:#fff;
+text-align:center;
+background-image:url("r.jpg");
+border-radius:30px;
+}
+.box .input-box {
+position:relative;
+}
+.box .input-box input{
+width:100%;
+padding:10px 0px;
+font-size:16px;
+color:#fff;
+letter-spacing:1px;
+margin-bottom:30px;
+border:none;
+outline:none;
+background:transparent;
+border-bottom:1px solid #fff;
+}
+.box .input-box label {
+position:absolute;
+top:0;
+left:0;
+letter-spacing:1px;
+padding:10px 0px;
+font-size:16px;
+color:white;
+transition:0.5s;
+}
+.box .input-box input:focus ~ label,
+.box .input-box input:valid ~ label {
+top:18px;
+left:0px;
+color:blue;
+font-size:12px;
+}
+.box input[type="submit"] {
+background:transparent;
+border:none;
+outline:none;
+color:#fff;
+background:purple;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+border-radius:30px;
+}
+.box input[type=submit]:hover {
+background-color:brown;
+}
+
